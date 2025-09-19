@@ -13,7 +13,7 @@ function handleRegexInputChange() {
         if (regexInput.value) {
             const regex = new RegExp(regexInput.value, "g");
             const highlighted = originalText.replaceAll(regex, (match) => {
-                return `<span style="color: green">${match}</span>`;
+                return `<span style="color: #1a1a1a; background: #17CB44;">${match}</span>`;
             });
             content.innerHTML = highlighted;
         }
